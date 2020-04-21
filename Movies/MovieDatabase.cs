@@ -164,6 +164,13 @@ namespace Movies
             return results;
         }
 
+        /// <summary>
+        /// Filters the provided collection of movies by Rotten Tomatoes rating
+        /// </summary>
+        /// <param name="movies"></param>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
         public static IEnumerable<Movie> FilterByRottenTomatoesRating(IEnumerable<Movie> movies, double? min, double? max)
         {
             if (min == null && max == null) return movies;
